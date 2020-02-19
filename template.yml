@@ -29,7 +29,7 @@ Resources:
             Condition:
               IpAddress:
                 aws:SourceIp:
-                  - "0.0.0.0/32" #IP WhiteList
+                  - "0.0.0.0/0" #IP WhiteList
       Bucket: !Ref DocumentBucket
 
   CodePipelineArtifactStoreBucket:
